@@ -1,0 +1,171 @@
+<rules>
+  <publish get="enabled" notify="enabled">
+    <eoj>001101</eoj>
+
+    <property>
+      <epc>E0</epc>
+      <name>temperature</name>
+      <converter>
+        <class>Float</class>
+        <param name="size">2</param>
+        <param name="divide">10</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>88</epc>
+      <name>failure</name>
+    </property>
+
+    <interval>30000</interval>
+    <topic>devices/[NODE]/[EOJ]</topic>
+  </publish>
+
+  <publish get="enabled" notify="enabled">
+    <eoj>001201</eoj>
+
+    <property>
+      <epc>E0</epc>
+      <name>humidity</name>
+      <converter>
+        <class>Integer</class>
+        <param name="unsigned">true</param>
+        <param name="size">1</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>88</epc>
+      <name>failure</name>
+    </property>
+
+    <interval>30000</interval>
+    <topic>devices/[NODE]/[EOJ]</topic>
+  </publish>
+
+  <publish get="enabled" notify="enabled">
+    <eoj>002d01</eoj>
+
+    <property>
+      <epc>E0</epc>
+      <name>airpressure</name>
+      <converter>
+        <class>Float</class>
+        <param name="size">2</param>
+        <param name="divide">10</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>88</epc>
+      <name>failure</name>
+    </property>
+
+    <interval>30000</interval>
+    <topic>devices/[NODE]/[EOJ]</topic>
+  </publish>
+
+  <publish get="enabled" notify="enabled">
+    <eoj>013001</eoj>
+
+    <property>
+      <epc>80</epc>
+      <name>operation_status</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"30":"ON","31":"OFF"}</param>
+      </converter>
+    </property>
+    
+    <property>
+      <epc>B0</epc>
+      <name>operation_mode</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"41":"Automatic","42":"AirConditioning","43":"Heating","44":"Dehumidify","45":"Ventilate","40":"Other"}</param>
+      </converter>
+    </property>
+    
+    <property>
+      <epc>B3</epc>
+      <name>desired_temperature</name>
+      <converter>
+        <class>Integer</class>
+        <param name="size">1</param>
+        <param name="signed">true</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>BA</epc>
+      <name>room_relative_humidity</name>
+      <converter>
+        <class>Integer</class>
+        <param name="size">1</param>
+        <param name="signed">true</param>
+      </converter>
+    </property>
+    
+    <property>
+      <epc>BB</epc>
+      <name>room_temperature</name>
+      <converter>
+        <class>Integer</class>
+        <param name="size">1</param>
+        <param name="signed">true</param>
+      </converter>
+    </property>
+    
+    <property>
+      <epc>A0</epc>
+      <name>airflow_valume</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"31":1,"32":2,"33":3,"34":4,"35":5,"36":6,"37":7,"38":8,"41":"AUTO"}</param>
+      </converter>
+    </property>
+
+    <interval>30000</interval>
+    <topic>devices/[NODE]/[EOJ]</topic>
+  </publish>
+
+  <subscribe>
+    <eoj>029001</eoj>
+    <property>
+      <epc>80</epc>
+      <name>lighting</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"ON":"30","OFF":"31"}</param>
+      </converter>
+    </property>
+    <topic>control/lighting/029001/set</topic>
+  </subscribe>
+
+  <subscribe>
+    <eoj>029002</eoj>
+    <property>
+      <epc>80</epc>
+      <name>lighting</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"ON":"30","OFF":"31"}</param>
+      </converter>
+    </property>
+    <topic>control/lighting/029002/set</topic>
+  </subscribe>
+
+  <subscribe>
+    <eoj>029003</eoj>
+    <property>
+      <epc>80</epc>
+      <name>lighting</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"ON":"30","OFF":"31"}</param>
+      </converter>
+    </property>
+    <topic>control/lighting/029003/set</topic>
+  </subscribe>
+
+</rules>

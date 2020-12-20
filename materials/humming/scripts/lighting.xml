@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+  <object ceoj="0290">
+    <property epc="80" set="enabled" notify="enabled">
+      <command>
+        <get>./lighting_get_22.sh</get>
+        <set>./lighting_set_22.sh</set>
+      </command>
+    </property>
+  </object>
+  <object ceoj="0290">
+    <property epc="80" set="enabled" notify="enabled">
+      <command>
+        <get>./lighting_get_27.sh</get>
+        <set>./lighting_set_27.sh</set>
+      </command>
+    </property>
+  </object>
+  <object ceoj="0290">
+    <property epc="80" set="enabled" notify="enabled">
+      <command>
+        <get>./lighting_get_17.sh</get>
+        <set>./lighting_set_17.sh</set>
+      </command>
+    </property>
+  </object>
+</device>

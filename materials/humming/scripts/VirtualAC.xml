@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+  <object ceoj="0130">
+    <property epc="80" get="enabled" set="enabled" notify="enabled">
+      <delegate>
+        <class>virtualac.StatusPropertyDelegate</class>
+      </delegate>
+    </property>
+    <property epc="B0" get="enabled" set="enabled" notify="enabled">
+      <delegate>
+        <class>virtualac.ModePropertyDelegate</class>
+      </delegate>
+    </property>
+    <property epc="B3" get="enabled" set="enabled" notify="disabled">
+      <delegate>
+        <class>virtualac.DesiredTemperaturePropertyDelegate</class>
+      </delegate>
+    </property>
+    <property epc="A0" get="enabled" set="enabled" notify="enabled">
+      <delegate>
+        <class>virtualac.AirflowPropertyDelegate</class>
+      </delegate>
+    </property>
+    <property epc="BA" get="enabled" set="disabled" notify="disabled">
+      <delegate>
+        <class>virtualac.HumidityPropertyDelegate</class>
+      </delegate>
+    </property>
+    <property epc="BB" get="enabled" set="disabled" notify="disabled">
+      <delegate>
+        <class>virtualac.TemperaturePropertyDelegate</class>
+      </delegate>
+    </property>
+  </object>
+</device>

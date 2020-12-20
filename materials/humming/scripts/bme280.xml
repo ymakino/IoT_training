@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+  <object ceoj="0011">
+    <property epc="80" notify="enabled">
+      <const>30</const>
+    </property>
+    <property epc="E0">
+      <command>
+        <get>./bme280_temperature.py</get>
+      </command>
+    </property>
+  </object>
+  <object ceoj="0012">
+    <property epc="80" notify="enabled">
+      <const>30</const>
+    </property>
+    <property epc="E0">
+      <command>
+        <get>./bme280_humidity.py</get>
+      </command>
+    </property>
+  </object>
+  <object ceoj="002d">
+    <property epc="80" notify="enabled">
+      <const>30</const>
+    </property>
+    <property epc="E0">
+      <command>
+        <get>./bme280_airpressure.py</get>
+      </command>
+    </property>
+  </object>
+</device>
