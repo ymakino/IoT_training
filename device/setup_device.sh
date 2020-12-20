@@ -6,11 +6,10 @@ sudo apt-get -y install default-jre
 
 cd ~/Documents
 git clone https://github.com/ymakino/IoT_training.git
-mv ~/Documents/IoT_training /tmp
-
 cp -r ~/Documents/IoT_training/materials/humming/VirtualAC ~/Desktop/
 cp -r ~/Documents/IoT_training/materials/humming/scripts ~/Desktop/
 chmod +x ~/Desktop/run.sh ~/Desktop/scripts/*.sh ~/Desktop/scripts/*.py
+mv ~/Documents/IoT_training /tmp
 
 cat <<EOF > ~/Desktop/run.sh
 #!/bin/sh
