@@ -25,7 +25,7 @@ git clone https://github.com/ymakino/humming.git
 cd /home/user/NetBeansProjects/echoMQTT/lib && JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 sh ./build_paho.sh
 
 # Open NetBeans
-~/netbeans-8.2/bin/netbeans & 
+~/netbeans-8.2/bin/netbeans
 
 # Add echowand and echoMQTT projects here
 # Build echoMQTT here
