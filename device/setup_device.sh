@@ -9,7 +9,7 @@ git clone https://github.com/ymakino/IoT_training.git
 cp -r ~/Documents/IoT_training/materials/humming/VirtualAC ~/Desktop/
 cp -r ~/Documents/IoT_training/materials/humming/scripts ~/Desktop/
 chmod +x ~/Desktop/run.sh ~/Desktop/scripts/*.sh ~/Desktop/scripts/*.py
-mv ~/Documents/IoT_training /tmp
+mv ~/Documents/IoT_training `mktemp -d`
 
 cat <<EOF > ~/Desktop/run.sh
 #!/bin/sh
