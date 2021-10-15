@@ -118,7 +118,7 @@
     
     <property>
       <epc>A0</epc>
-      <name>airflow_valume</name>
+      <name>airflow_volume</name>
       <converter>
         <class>Map</class>
         <param name="mapping">{"31":1,"32":2,"33":3,"34":4,"35":5,"36":6,"37":7,"38":8,"41":"AUTO"}</param>
