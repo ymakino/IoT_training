@@ -45,7 +45,7 @@ cd ~/Desktop
 cat <<EOF > run.sh
 #!/bin/sh
 
-java -jar ~/NetBeansProjects/echoMQTT/dist/echoMQTT.jar -i ${AREANET_IF} -b tcp://cloud.local:1883 ~/Desktop/rules.xml
+java -jar ~/NetBeansProjects/echoMQTT/dist/echoMQTT.jar -i ${AREANET_IF} -b tcp://cloud.local:1883 -u mosquitto -p secret ~/Desktop/rules.xml
 EOF
 
 chmod +x run.sh
