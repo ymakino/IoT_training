@@ -57,3 +57,6 @@ convert +antialias -font DejaVu-Sans -fill "#FFFFFF" -gravity SouthEast -pointsi
 
 echo gsettings set org.gnome.desktop.background picture-uri "file://`realpath ~/Pictures/ubg-gateway.png`"
 gsettings set org.gnome.desktop.background picture-uri "file://`realpath ~/Pictures/ubg-gateway.png`"
+
+echo gsettings set org.gnome.desktop.screensaver picture-uri "file://`realpath ~/Pictures/ubg-gateway.png`"
+gsettings set org.gnome.desktop.screensaver picture-uri "file://`realpath ~/Pictures/ubg-gateway.png`"
