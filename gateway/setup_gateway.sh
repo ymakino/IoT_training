@@ -50,7 +50,7 @@ EOF
 
 chmod +x run.sh
 
-sudo apt install wireshark mosquitto-clients zenmap
+sudo apt -y install wireshark mosquitto-clients zenmap
 sudo usermod -aG wireshark $USER
 
 convert +antialias -font DejaVu-Sans -fill "#FFFFFF" -gravity SouthEast -pointsize 256 -annotate +128+64 Gateway /usr/share/backgrounds/warty-final-ubuntu.png ~/Pictures/ubg-gateway.png
