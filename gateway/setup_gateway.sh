@@ -53,6 +53,10 @@ chmod +x run.sh
 sudo apt -y install wireshark mosquitto-clients zenmap
 sudo usermod -aG wireshark $USER
 
+mkdir -p ~/.config/wireshark
+cd ~/.config/wireshark
+git clone https://github.com/mzyy94/ECHONET-Lite-dissector plugins
+
 convert +antialias -font DejaVu-Sans -fill "#FFFFFF" -gravity SouthEast -pointsize 256 -annotate +128+64 Gateway /usr/share/backgrounds/warty-final-ubuntu.png ~/Pictures/ubg-gateway.png
 
 echo gsettings set org.gnome.desktop.background picture-uri "file://`realpath ~/Pictures/ubg-gateway.png`"
