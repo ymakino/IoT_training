@@ -36,5 +36,5 @@ services:
     ports:
       - "1883:1883"
     volumes:
+      - ./mosquitto/log:/mosquitto/log
       - ./mosquitto/config:/mosquitto/config
-
