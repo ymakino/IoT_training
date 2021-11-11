@@ -7,6 +7,7 @@ services:
       - "9200:9200"
       - "9300:9300"
     volumes:
+      - ./elasticsearch/config/logging:/usr/share/elasticsearch/config/logging
       - ./elasticsearch/logs:/usr/share/elasticsearch/logs
       - ./elasticsearch/data:/usr/share/elasticsearch/data
     environment:
