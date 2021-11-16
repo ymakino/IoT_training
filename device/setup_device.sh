@@ -2,7 +2,7 @@
 
 ETH_IF=eth0
 
-sudo apt-get -y install default-jre wireshark tcpdump
+sudo apt-get -y install default-jre wireshark tcpdump telnet
 sudo usermod -aG wireshark $USER
 
 mkdir -p ~/.config/wireshark
