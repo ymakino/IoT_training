@@ -2,7 +2,12 @@
 
 ETH_IF=eth0
 
-sudo apt-get -y install default-jre
+sudo apt-get -y install default-jre wireshark
+sudo usermod -aG wireshark $USER
+
+mkdir -p ~/.config/wireshark
+cd ~/.config/wireshark
+git clone https://github.com/mzyy94/ECHONET-Lite-dissector plugins
 
 cd ~/Documents
 git clone https://github.com/ymakino/IoT_training.git
