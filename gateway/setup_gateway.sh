@@ -25,12 +25,16 @@ git clone https://github.com/ymakino/echowand.git
 git clone https://github.com/ymakino/echoMQTT.git
 git clone https://github.com/ymakino/humming.git
 
+wget https://github.com/ymakino/IoT_training/raw/master/materials/VirtualAC.tar.gz
+tar zxvf VirtualAC.tar.gz
+rm VirtualAC.tar.gz
+
 # Build Paho Library
 cd ~/NetBeansProjects/echoMQTT/lib && JAVA_HOME=/usr/lib/jvm/default-java sh ./build_paho.sh
 
 # Open NetBeans
 echo
-echo Open echowand and echoMQTT projects
+echo Open echowand, echoMQTT, humming and VirtualAC projects
 echo Build echoMQTT
 echo Then quit NetBeans
 ~/netbeans-${NETBEANS_VERSION}/netbeans/bin/netbeans
