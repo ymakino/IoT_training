@@ -7,5 +7,5 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-printf "%02x" "$1" | sed -e 's/.*\(....\)$/\1/' | tee $DATAFILE
+printf "%02x" "$1" | sed -e 's/.*\(..\)$/\1/' | tee $DATAFILE
 echo
