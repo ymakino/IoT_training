@@ -130,6 +130,49 @@
   </publish>
 
   <subscribe>
+    <eoj>013001</eoj>
+
+    <property>
+      <epc>80</epc>
+      <name>operation_status</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"ON":"30","OFF":"31"}</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>B0</epc>
+      <name>operation_mode</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"Automatic":"41","AirConditioning":"42","Heating":"43","Dehumidify":"44","Ventilate":"45","Other":"40"}</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>B3</epc>
+      <name>desired_temperature</name>
+      <converter>
+        <class>Integer</class>
+        <param name="size">1</param>
+        <param name="signed">true</param>
+      </converter>
+    </property>
+
+    <property>
+      <epc>A0</epc>
+      <name>airflow_volume</name>
+      <converter>
+        <class>Map</class>
+        <param name="mapping">{"1":"31","2":"32","3":"33","4":"34","5":"35","6":"36","7":"37","8":"38","AUTO":"41"}</param>
+      </converter>
+    </property>
+
+    <topic>control/ac/013001/set</topic>
+  </subscribe>
+
+  <subscribe>
     <eoj>029001</eoj>
     <property>
       <epc>80</epc>
