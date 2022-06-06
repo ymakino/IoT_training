@@ -4,11 +4,11 @@ AREANET_IF=eno1
 NETBEANS_VERSION=13
 
 # Install packages
-sudo apt update
-sudo apt -y upgrade
-sudo apt -y install default-jdk maven git
-sudo apt -y install wireshark mosquitto-clients imagemagick
-sudo apt -y install zenmap
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get -y install default-jdk maven git
+sudo apt-get -y install wireshark mosquitto-clients imagemagick
+sudo apt-get -y install zenmap
 sudo usermod -aG wireshark $USER
 
 # Install NetBeans
