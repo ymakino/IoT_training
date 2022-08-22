@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AREANET_IF=eno1
-NETBEANS_VERSION=13
+NETBEANS_VERSION=14
 
 # Install packages
 sudo apt-get update
