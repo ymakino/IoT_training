@@ -7,7 +7,7 @@ NETBEANS_VERSION=14
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install default-jdk maven git
-sudo apt-get -y install wireshark mosquitto-clients imagemagick
+sudo apt-get -y install wireshark mosquitto-clients imagemagick nmap
 sudo apt-get -y install zenmap
 sudo usermod -aG wireshark $USER
 
