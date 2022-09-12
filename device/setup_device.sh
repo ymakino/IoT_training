@@ -6,6 +6,9 @@ sudo apt-get -y install default-jre wireshark tcpdump telnet
 sudo apt-get -y install iptables
 sudo usermod -aG wireshark $USER
 
+sudo apt-get -y install fail2ban
+sudo systemctl disable fail2ban
+
 mkdir -p ~/.config/wireshark
 cd ~/.config/wireshark
 git clone https://github.com/mzyy94/ECHONET-Lite-dissector plugins
